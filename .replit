@@ -1,0 +1,15 @@
+# Replit run configuration for Vite dev server
+hidden = [".replit", "replit.nix"]
+
+[env]
+PORT = "3000"
+
+[interpreter]
+command = ["bash", "-lc"]
+
+[packager]
+language = "nodejs"
+install = ["npm", "install"]
+
+[run]
+command = "npm run dev -- --host 0.0.0.0 --port $PORT"
